@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igreja MEAP - Cidade da Restauração</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Personalização da paleta de cores solicitada */
+        .bg-meap-purple { background-color: #4c1d95; } /* Roxo azulado */
+        .text-meap-purple { color: #4c1d95; }
+        .bg-meap-red { background-color: #dc2626; } /* Vermelho leve */
+        .border-meap-red { border-color: #dc2626; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-meap-purple">MEAP</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-meap-red transition">Início</a>
+                <a href="#sobre" class="hover:text-meap-red transition">Sobre Nós</a>
+                <a href="#paroquias" class="hover:text-meap-red transition">Paróquias</a>
+                <a href="#cultos" class="hover:text-meap-red transition">Cultos</a>
+                <a href="#contato" class="bg-meap-purple text-white px-4 py-2 rounded-lg hover:bg-opacity-90">Localização</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-meap-purple mb-4">Cidade da Restauração</h1>
+            <p class="text-xl text-gray-600 mb-8 italic">"Jesus Liberta"</p>
+            <div class="w-24 h-1 bg-meap-red mx-auto mb-8"></div>
+            <p class="max-w-2xl mx-auto text-lg">
+                Missão Evangélica Almas Perdidas: Resgatando vidas e restaurando famílias desde 2013.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sobre / Fundador -->
+    <section id="sobre" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 border-l-4 border-meap-red pl-4">Nossa História</h2>
+                    <p class="mb-4">Fundada em 2013 pelo <strong>Evangelista João Panzu</strong>, a MEAP nasceu com o propósito ardoroso de buscar as almas que se encontram perdidas, levando a mensagem de salvação e esperança.</p>
+                    <blockquote class="italic border-gray-200 border-2 p-4 rounded-lg bg-gray-50">
+                        "Porque o Filho do Homem veio buscar e salvar o que se havia perdido." <br>
+                        <span class="font-bold text-sm">— Lucas 19:10</span>
+                    </blockquote>
+                </div>
+                <div class="md:w-1/2 bg-meap-purple text-white p-10 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4">Significado de MEAP</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li><span class="font-bold text-meap-red">M</span>issão</li>
+                        <li><span class="font-bold text-meap-red">E</span>vangélica</li>
+                        <li><span class="font-bold text-meap-red">A</span>lmas</li>
+                        <li><span class="font-bold text-meap-red">P</span>erdidas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paróquias -->
+    <section id="paroquias" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Onde Estamos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h4 class="font-bold text-meap-purple">Sapú</h4>
+                    <p class="text-sm text-gray-500">Sede Principal</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h4 class="font-bold text-meap-purple">Calemba 2</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h4 class="font-bold text-meap-purple">Mabor (Cacuaco)</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h4 class="font-bold text-meap-purple">Hoji Ya Yenda</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultos e Horários -->
+    <section id="cultos" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Nossa Agenda</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Geral -->
+                <div class="border border-gray-100 p-8 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 text-meap-red">Cultos de Celebração</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Domingo:</strong> 08:30h - 12:00h</li>
+                        <li><strong>Terça-feira:</strong> 16:30h - 19:00h</li>
+                        <li><strong>Quinta-feira:</strong> 16:30h - 19:00h</li>
+                    </ul>
+                </div>
+                <!-- Juventude -->
+                <div class="bg-meap-purple text-white p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-4">Culto da Juventude</h3>
+                    <p class="text-lg">Sábado</p>
+                    <p>16:00h - 18:00h</p>
+                    <p class="mt-4 text-sm opacity-80">"Lembra-te do teu Criador nos dias da tua mocidade..." — Ecl. 12:1</p>
+                </div>
+                <!-- Crianças -->
+                <div class="border border-gray-100 p-8 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 text-meap-red">Culto de Crianças</h3>
+                    <p class="text-lg">Sábado</p>
+                    <p>08:00h - 10:00h</p>
+                    <p class="mt-4 text-sm text-gray-500 italic">"Deixai vir a mim os pequeninos..." — Mateus 19:14</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa e Localização -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-meap-purple">Visite-nos</h2>
+                <p>Bairro Sapú, Ref: Escola Josefina Bakhita</p>
+            </div>
+            
+            <div class="rounded-2xl overflow-hidden shadow-2xl h-96">
+                <!-- Onde alterar o mapa: mude o 'q=' no link abaixo para o endereço exato ou coordenadas -->
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="https://maps.google.com/maps?q=Escola%20Josefina%20Bakhita%2C%20Sapu%2C%20Luanda&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-meap-purple text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl font-bold mb-4">MEAP - Cidade da Restauração</p>
+            <p class="opacity-70">© 2026 Igreja Missão Evangélica Almas Perdidas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
