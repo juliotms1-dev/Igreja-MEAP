@@ -1,206 +1,1164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igreja MEAP - Cidade da Restauração</title>
-    <!-- SEO Core -->
-<meta name="description" content="MEAP Luanda - Igreja Evangélica Pentecostal. Cultos aos domingos às 8:40. Sedes localizada em Luanda, Angola. Venha nos visitar.">
-<meta name="keywords" content="MEAP, igreja MEAP, igreja evangélica Luanda, igreja pentecostal Angola, culto Luanda, avivamento, Almas, perdidas, bakhita, sapú, João Panzu, evangelista, ev.,reverendo">
-<meta name="author" content="MEAP Angola">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://igreja-meap.vercel.app/">
-
-<!-- Mobile -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0F172A">
-
-<!-- Open Graph - WhatsApp/Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://igreja-meap.vercel.app/">
-<meta property="og:title" content="MEAP - Ministério Evangélico Avivamento Pentecostal">
-<meta property="og:description" content="Igreja em Luanda. Cultos aos domingos, células e palavra de Deus para sua família.">
-<meta property="og:image" content="https://igreja-meap.vercel.app/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="pt_AO">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="MEAP - Ministério Evangélico Avivamento Pentecostal">
-<meta name="twitter:description" content="Igreja em Luanda. Cultos aos domingos, células e palavra de Deus para sua família.">
-<meta name="twitter:image" content="https://igreja-meap.vercel.app/og-image.jpg">
-
-<!-- Schema.org - Diz pro Google que é uma igreja -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Church",
-  "name": "MEAP - Missão Evangélica Para Almas Perdidas",
-  "alternateName": "MEAP Luanda",
-  "url": "https://igreja-meap.vercel.app",
-  "logo": "https://igreja-meap.vercel.app/logo.png",
-  "image": "https://igreja-meap.vercel.app/og-image.jpg",
-  "description": "Igreja evangélica pentecostal em Luanda, Angola.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Luanda",
-    "addressRegion": "Luanda",
-    "addressCountry": "AO"
-  },
-  "telephone": "+244 900 000 000",
-  "sameAs": [
-    "https://facebook.com/meapangola",
-    "https://instagram.com/meapangola"
-  ]
-}
-</script>
+    <title>MEAP - Igreja Cidade da Restauração | Missão Evangélica Almas Perdidas</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.com/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        meap: {
+                            blue: '#1E1B4B',     /* Azul Nobre / Roxo Escuro */
+                            purple: '#312E81',   /* Roxo Institucional */
+                            red: '#DC2626',      /* Vermelho Primário */
+                            redHover: '#B91C1C', /* Vermelho Hover */
+                            accent: '#EF4444',   /* Vermelho Destaque */
+                            light: '#F8FAFC',    /* Fundo Neutro Limpo */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        /* Personalização da paleta de cores solicitada */
-        .bg-meap-purple { background-color: #4c1d95; } /* Roxo azulado */
-        .text-meap-purple { color: #4c1d95; }
-        .bg-meap-red { background-color: #dc2626; } /* Vermelho leve */
-        .border-meap-red { border-color: #dc2626; }
+        /* Custom Adjustments */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(30, 27, 75, 0.85) 100%);
+        }
+        .gradient-text-red {
+            background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-blue {
+            background: linear-gradient(135deg, #1E1B4B 0%, #312E81 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .swiper-pagination-bullet-active {
+            background: #DC2626 !important;
+            width: 28px !important;
+            border-radius: 6px !important;
+        }
     </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="font-sans bg-white text-slate-800 antialiased overflow-x-hidden selection:bg-meap-red selection:text-white">
 
-    <!-- Navegação -->
-    <nav class="fixed w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-meap-purple">MEAP</div>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#inicio" class="hover:text-meap-red transition">Início</a>
-                <a href="#sobre" class="hover:text-meap-red transition">Sobre Nós</a>
-                <a href="#paroquias" class="hover:text-meap-red transition">Paróquias</a>
-                <a href="#cultos" class="hover:text-meap-red transition">Cultos</a>
-                <a href="#contato" class="bg-meap-purple text-white px-4 py-2 rounded-lg hover:bg-opacity-90">Localização</a>
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-header border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-meap-blue flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-meap-blue/20 group-hover:scale-105 transition-transform">
+                        <span class="text-meap-red">M</span>E
+                    </div>
+                    <div>
+                        <div class="font-extrabold text-xl tracking-tight text-meap-blue flex items-center gap-1.5">
+                            MEAP <span class="w-2 h-2 rounded-full bg-meap-red"></span>
+                        </div>
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-slate-500" data-i18n="header.subtitle">Cidade da Restauração</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+                    <a href="#inicio" class="hover:text-meap-red transition-colors" data-i18n="nav.home">Início</a>
+                    <a href="#sobre" class="hover:text-meap-red transition-colors" data-i18n="nav.about">Sobre Nós</a>
+                    <a href="#cultos" class="hover:text-meap-red transition-colors" data-i18n="nav.services">Cultos</a>
+                    <a href="#paroquias" class="hover:text-meap-red transition-colors" data-i18n="nav.branches">Paróquias</a>
+                    <a href="#media" class="hover:text-meap-red transition-colors" data-i18n="nav.media">Vídeos</a>
+                    <a href="#blog" class="hover:text-meap-red transition-colors" data-i18n="nav.blog">Notícias</a>
+                    <a href="#contato" class="hover:text-meap-red transition-colors" data-i18n="nav.contact">Contacto</a>
+                </nav>
+
+                <!-- Right Actions: Language Switcher & CTA -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <!-- Language Selector -->
+                    <div class="relative group">
+                        <button id="langBtn" class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-700 hover:border-meap-red transition-all">
+                            <i class="fa-solid fa-globe text-meap-red"></i>
+                            <span id="currentLang">PT</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div class="absolute right-0 top-full mt-2 w-32 bg-white rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block transition-all">
+                            <button onclick="changeLanguage('pt')" class="w-full text-left px-4 py-2 text-xs font-semibold hover:bg-slate-50 hover:text-meap-red flex items-center justify-between">
+                                Português <span class="text-[10px] text-slate-400">PT</span>
+                            </button>
+                            <button onclick="changeLanguage('en')" class="w-full text-left px-4 py-2 text-xs font-semibold hover:bg-slate-50 hover:text-meap-red flex items-center justify-between">
+                                English <span class="text-[10px] text-slate-400">EN</span>
+                            </button>
+                            <button onclick="changeLanguage('fr')" class="w-full text-left px-4 py-2 text-xs font-semibold hover:bg-slate-50 hover:text-meap-red flex items-center justify-between">
+                                Français <span class="text-[10px] text-slate-400">FR</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Live CTA -->
+                    <a href="https://www.youtube.com" target="_blank" class="flex items-center gap-2 bg-meap-red hover:bg-meap-redHover text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-md shadow-meap-red/20 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                        </span>
+                        <span data-i18n="header.live">Ao Vivo</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="flex lg:hidden items-center gap-3">
+                    <div class="relative">
+                        <button id="mobileLangBtn" class="flex items-center gap-1 px-2.5 py-1 rounded-lg border border-slate-200 text-xs font-bold">
+                            <span id="mobileCurrentLang">PT</span>
+                        </button>
+                    </div>
+                    <button id="menuToggle" class="text-slate-800 p-2 text-2xl focus:outline-none">
+                        <i class="fa-solid fa-bars" id="menuIcon"></i>
+                    </button>
+                </div>
+
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="pt-32 pb-20 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-extrabold text-meap-purple mb-4">Cidade da Restauração</h1>
-            <p class="text-xl text-gray-600 mb-8 italic">"Jesus Liberta"</p>
-            <div class="w-24 h-1 bg-meap-red mx-auto mb-8"></div>
-            <p class="max-w-2xl mx-auto text-lg">
-                Missão Evangélica Almas Perdidas: Resgatando vidas e restaurando famílias desde 2013.
-            </p>
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 transition-all duration-300">
+            <nav class="flex flex-col gap-4 text-slate-800 font-semibold text-base">
+                <a href="#inicio" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.home">Início</a>
+                <a href="#sobre" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.about">Sobre Nós</a>
+                <a href="#cultos" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.services">Cultos</a>
+                <a href="#paroquias" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.branches">Paróquias</a>
+                <a href="#media" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.media">Vídeos</a>
+                <a href="#blog" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.blog">Notícias</a>
+                <a href="#contato" onclick="toggleMobileMenu()" class="hover:text-meap-red" data-i18n="nav.contact">Contacto</a>
+                
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs font-bold text-slate-400">IDIOMA / LANGUAGE:</span>
+                    <div class="flex gap-2">
+                        <button onclick="changeLanguage('pt')" class="px-3 py-1 text-xs bg-slate-100 rounded font-bold">PT</button>
+                        <button onclick="changeLanguage('en')" class="px-3 py-1 text-xs bg-slate-100 rounded font-bold">EN</button>
+                        <button onclick="changeLanguage('fr')" class="px-3 py-1 text-xs bg-slate-100 rounded font-bold">FR</button>
+                    </div>
+                </div>
+
+                <a href="https://www.youtube.com" target="_blank" class="w-full text-center bg-meap-red text-white py-3 rounded-xl font-bold text-sm shadow-md mt-2">
+                    <i class="fa-solid fa-play mr-2"></i> <span data-i18n="header.live">Assistir Ao Vivo</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH SWIPER CAROUSEL -->
+    <section id="inicio" class="relative pt-20">
+        <div class="swiper heroSwiper h-[85vh] sm:h-[90vh] w-full">
+            <div class="swiper-wrapper">
+                
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=2000&q=80" alt="Igreja MEAP Culto" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 hero-overlay flex items-center">
+                        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full text-white">
+                            <div class="max-w-3xl space-y-6" data-aos="fade-up">
+                                <div class="inline-flex items-center gap-2 bg-meap-red/90 text-white text-xs font-extrabold uppercase px-4 py-1.5 rounded-full tracking-widest shadow-lg">
+                                    <i class="fa-solid fa-cross"></i> <span data-i18n="hero.tag">Missão Evangélica Almas Perdidas</span>
+                                </div>
+                                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-serif leading-tight">
+                                    Cidade da <br><span class="text-meap-accent italic">Restauração</span>
+                                </h1>
+                                <p class="text-xl sm:text-2xl font-bold tracking-widest uppercase text-slate-200 border-l-4 border-meap-red pl-4">
+                                    "JESUS LIBERTA"
+                                </p>
+                                <p class="text-slate-300 text-base sm:text-lg max-w-xl font-light" data-i18n="hero.desc1">
+                                    Resgatando vidas, restaurando famílias e transformando destinos desde 2013 em Luanda e no mundo.
+                                </p>
+                                <div class="flex flex-wrap gap-4 pt-2">
+                                    <a href="#cultos" class="bg-meap-red hover:bg-meap-redHover text-white px-8 py-4 rounded-xl font-bold text-sm shadow-xl transition-all transform hover:-translate-y-1" data-i18n="hero.btn1">
+                                        Nossos Cultos
+                                    </a>
+                                    <a href="#paroquias" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-sm transition-all" data-i18n="hero.btn2">
+                                        Ver Paróquias
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative">
+                    <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&w=2000&q=80" alt="Pessoas em adoração" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 hero-overlay flex items-center">
+                        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full text-white">
+                            <div class="max-w-3xl space-y-6">
+                                <div class="inline-flex items-center gap-2 bg-meap-purple/90 text-white text-xs font-extrabold uppercase px-4 py-1.5 rounded-full tracking-widest shadow-lg">
+                                    <i class="fa-solid fa-book-bible"></i> <span>Salmos 23:6</span>
+                                </div>
+                                <h2 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold italic leading-tight">
+                                    "Certamente que a bondade e a misericórdia me seguirão todos os dias..."
+                                </h2>
+                                <p class="text-slate-300 text-lg font-light" data-i18n="hero.desc2">
+                                    Um lugar sagrado de comunhão, oração e ensino vivo da Palavra de Deus.
+                                </p>
+                                <div class="pt-2">
+                                    <a href="#contato" class="bg-white text-meap-blue hover:bg-slate-100 px-8 py-4 rounded-xl font-bold text-sm shadow-xl transition-all inline-block" data-i18n="hero.btn3">
+                                        Visite a Sede no Sapú
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <!-- Sobre / Fundador -->
-    <section id="sobre" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-6 border-l-4 border-meap-red pl-4">Nossa História</h2>
-                    <p class="mb-4">Fundada em 2013 pelo <strong>Evangelista João Panzu</strong>, a MEAP nasceu com o propósito ardoroso de buscar as almas que se encontram perdidas, levando a mensagem de salvação e esperança.</p>
-                    <blockquote class="italic border-gray-200 border-2 p-4 rounded-lg bg-gray-50">
-                        "Porque o Filho do Homem veio buscar e salvar o que se havia perdido." <br>
-                        <span class="font-bold text-sm">— Lucas 19:10</span>
-                    </blockquote>
+    <!-- BANNER DE DESTAQUE / VERSÍCULO -->
+    <section class="bg-meap-light py-12 border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-100 flex flex-col md:flex-row items-center justify-between gap-8" data-aos="fade-up">
+                <div class="space-y-2 text-center md:text-left">
+                    <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="verse.tag">Palavra Rhema</span>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-meap-blue">
+                        "Porque o Filho do Homem veio buscar e salvar o que se havia perdido."
+                    </h3>
+                    <p class="text-slate-500 font-semibold text-sm">— Lucas 19:10</p>
                 </div>
-                <div class="md:w-1/2 bg-meap-purple text-white p-10 rounded-2xl shadow-xl">
-                    <h3 class="text-2xl font-bold mb-4">Significado de MEAP</h3>
-                    <ul class="space-y-3 text-lg">
-                        <li><span class="font-bold text-meap-red">M</span>issão</li>
-                        <li><span class="font-bold text-meap-red">E</span>vangélica</li>
-                        <li><span class="font-bold text-meap-red">A</span>lmas</li>
-                        <li><span class="font-bold text-meap-red">P</span>erdidas</li>
-                    </ul>
-                </div>
+                <a href="#sobre" class="shrink-0 bg-meap-blue hover:bg-meap-purple text-white px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-md transition-all">
+                    <span data-i18n="verse.btn">Nossa História</span> <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Paróquias -->
-    <section id="paroquias" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12">Onde Estamos</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-                    <h4 class="font-bold text-meap-purple">Sapú</h4>
-                    <p class="text-sm text-gray-500">Sede Principal</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <h4 class="font-bold text-meap-purple">Calemba 2</h4>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <h4 class="font-bold text-meap-purple">Mabor (Cacuaco)</h4>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <h4 class="font-bold text-meap-purple">Hoji Ya Yenda</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cultos e Horários -->
-    <section id="cultos" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Nossa Agenda</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Geral -->
-                <div class="border border-gray-100 p-8 rounded-2xl shadow-sm">
-                    <h3 class="text-xl font-bold mb-4 text-meap-red">Cultos de Celebração</h3>
-                    <ul class="space-y-2">
-                        <li><strong>Domingo:</strong> 08:30h - 12:00h</li>
-                        <li><strong>Terça-feira:</strong> 16:30h - 19:00h</li>
-                        <li><strong>Quinta-feira:</strong> 16:30h - 19:00h</li>
-                    </ul>
-                </div>
-                <!-- Juventude -->
-                <div class="bg-meap-purple text-white p-8 rounded-2xl">
-                    <h3 class="text-xl font-bold mb-4">Culto da Juventude</h3>
-                    <p class="text-lg">Sábado</p>
-                    <p>16:00h - 18:00h</p>
-                    <p class="mt-4 text-sm opacity-80">"Lembra-te do teu Criador nos dias da tua mocidade..." — Ecl. 12:1</p>
-                </div>
-                <!-- Crianças -->
-                <div class="border border-gray-100 p-8 rounded-2xl shadow-sm">
-                    <h3 class="text-xl font-bold mb-4 text-meap-red">Culto de Crianças</h3>
-                    <p class="text-lg">Sábado</p>
-                    <p>08:00h - 10:00h</p>
-                    <p class="mt-4 text-sm text-gray-500 italic">"Deixai vir a mim os pequeninos..." — Mateus 19:14</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mapa e Localização -->
-    <section id="contato" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4 text-meap-purple">Visite-nos</h2>
-                <p>Bairro Sapú, Ref: Escola Josefina Bakhita</p>
-            </div>
+    <!-- SOBRE NÓS & SIGNIFICADO MEAP -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
             
-            <div class="rounded-2xl overflow-hidden shadow-2xl h-96">
-                <!-- Onde alterar o mapa: mude o 'q=' no link abaixo para o endereço exato ou coordenadas -->
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    frameborder="0" 
-                    scrolling="no" 
-                    marginheight="0" 
-                    marginwidth="0" 
-                    src="https://maps.google.com/maps?q=Escola%20Josefina%20Bakhita%2C%20Sapu%2C%20Luanda&t=&z=15&ie=UTF8&iwloc=&output=embed">
-                </iframe>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <!-- Text Column -->
+                <div class="lg:col-span-7 space-y-8" data-aos="fade-right">
+                    <div class="space-y-3">
+                        <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="about.sub">Sobre a Nossa Igreja</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-meap-blue">
+                            Fundada em 2013 com o Propósito do Reino
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal" data-i18n="about.p1">
+                        A **MEAP (Missão Evangélica Almas Perdidas)** nasceu sob a revelação divina concedida ao **Evangelista João Panzu**. Com sede no Bairro Sapú (Cidade da Restauração), a igreja tem sido uma ferramenta viva de milagres, ensino profundo das escrituras e libertação espiritual em Angola.
+                    </p>
+
+                    <!-- Acronym Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:border-meap-red/40 transition-all group">
+                            <span class="block text-4xl font-black text-meap-red group-hover:scale-110 transition-transform">M</span>
+                            <span class="text-xs font-extrabold text-meap-blue tracking-wider uppercase mt-1 block" data-i18n="acronym.m">Missão</span>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:border-meap-red/40 transition-all group">
+                            <span class="block text-4xl font-black text-meap-blue group-hover:scale-110 transition-transform">E</span>
+                            <span class="text-xs font-extrabold text-meap-blue tracking-wider uppercase mt-1 block" data-i18n="acronym.e">Evangélica</span>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:border-meap-red/40 transition-all group">
+                            <span class="block text-4xl font-black text-meap-red group-hover:scale-110 transition-transform">A</span>
+                            <span class="text-xs font-extrabold text-meap-blue tracking-wider uppercase mt-1 block" data-i18n="acronym.a">Almas</span>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:border-meap-red/40 transition-all group">
+                            <span class="block text-4xl font-black text-meap-blue group-hover:scale-110 transition-transform">P</span>
+                            <span class="text-xs font-extrabold text-meap-blue tracking-wider uppercase mt-1 block" data-i18n="acronym.p">Perdidas</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-meap-blue text-white flex items-center gap-6 shadow-xl">
+                        <div class="w-16 h-16 rounded-full bg-meap-red flex items-center justify-center shrink-0 text-2xl font-bold">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Evangelista João Panzu</h4>
+                            <p class="text-xs text-slate-300 uppercase tracking-wider" data-i18n="about.founder">Fundador e Líder Geral da MEAP</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Image Stack Column -->
+                <div class="lg:col-span-5 relative" data-aos="fade-left">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Main Image -->
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?auto=format&fit=crop&w=1000&q=80" alt="Liderança MEAP" class="w-full h-[450px] object-cover">
+                        </div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-2xl border border-slate-100 max-w-xs hidden sm:block">
+                            <div class="flex items-center gap-4">
+                                <div class="text-3xl font-black text-meap-red">13+</div>
+                                <div class="text-xs font-bold text-meap-blue uppercase leading-snug" data-i18n="about.years">
+                                    Anos de Existência & Impacto Espiritual
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-meap-purple text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-xl font-bold mb-4">MEAP - Cidade da Restauração</p>
-            <p class="opacity-70">© 2026 Igreja Missão Evangélica Para Almas Perdidas. Todos os direitos reservados.</p>
+    <!-- PROGRAMAÇÃO DE CULTOS (SEÇÃO COMPLETA) -->
+    <section id="cultos" class="py-24 bg-meap-light">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="services.sub">Agenda da Semana</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-meap-blue mt-2">
+                    Programa dos Cultos
+                </h2>
+                <p class="text-slate-500 text-base mt-4" data-i18n="services.desc">
+                    Venha celebrar, orar e aprender com a nossa comunidade. Há um momento especial reservado para você e sua família.
+                </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Culto Domical -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition-all relative overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-2 h-full bg-meap-red absolute left-0 top-0"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 bg-red-50 text-meap-red text-xs font-extrabold rounded-full uppercase" data-i18n="services.sun">Domingo</span>
+                        <i class="fa-solid fa-sun text-2xl text-amber-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-meap-blue mb-2" data-i18n="services.sunTitle">Culto Dominical da Família</h3>
+                    <p class="text-slate-500 text-sm mb-6" data-i18n="services.sunDesc">Louvor vibrante, adoração, ministração da Palavra e benção para a família.</p>
+                    <div class="flex items-center gap-3 text-meap-blue font-extrabold text-lg pt-4 border-t border-slate-100">
+                        <i class="fa-regular fa-clock text-meap-red"></i>
+                        <span>08:30h – 12:00h</span>
+                    </div>
+                </div>
+
+                <!-- Culto Terça -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition-all relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-2 h-full bg-meap-purple absolute left-0 top-0"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 bg-indigo-50 text-meap-purple text-xs font-extrabold rounded-full uppercase" data-i18n="services.tue">Terça-Feira</span>
+                        <i class="fa-solid fa-hands-praying text-2xl text-meap-purple"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-meap-blue mb-2" data-i18n="services.tueTitle">Culto de Ensino e Doutrina</h3>
+                    <p class="text-slate-500 text-sm mb-6" data-i18n="services.tueDesc">Crescimento espiritual profundo e estudo sistemático das Escrituras.</p>
+                    <div class="flex items-center gap-3 text-meap-blue font-extrabold text-lg pt-4 border-t border-slate-100">
+                        <i class="fa-regular fa-clock text-meap-red"></i>
+                        <span>16:30h – 19:00h</span>
+                    </div>
+                </div>
+
+                <!-- Culto Quinta -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition-all relative overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-2 h-full bg-meap-red absolute left-0 top-0"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 bg-red-50 text-meap-red text-xs font-extrabold rounded-full uppercase" data-i18n="services.thu">Quinta-Feira</span>
+                        <i class="fa-solid fa-fire text-2xl text-meap-red"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-meap-blue mb-2" data-i18n="services.thuTitle">Culto de Libertação e Milagres</h3>
+                    <p class="text-slate-500 text-sm mb-6" data-i18n="services.thuDesc">Oração forte, quebra de correntes e manifestação do poder de Deus.</p>
+                    <div class="flex items-center gap-3 text-meap-blue font-extrabold text-lg pt-4 border-t border-slate-100">
+                        <i class="fa-regular fa-clock text-meap-red"></i>
+                        <span>16:30h – 19:00h</span>
+                    </div>
+                </div>
+
+                <!-- Sábado Crianças -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition-all relative overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-2 h-full bg-emerald-500 absolute left-0 top-0"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-600 text-xs font-extrabold rounded-full uppercase" data-i18n="services.satMorning">Sábado Manhã</span>
+                        <i class="fa-solid fa-child-reaching text-2xl text-emerald-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-meap-blue mb-2" data-i18n="services.kidsTitle">Culto das Crianças</h3>
+                    <p class="text-slate-500 text-sm mb-6" data-i18n="services.kidsDesc">Educação cristã, louvor infantil e evangelismo adaptado aos pequeninos.</p>
+                    <div class="flex items-center gap-3 text-meap-blue font-extrabold text-lg pt-4 border-t border-slate-100">
+                        <i class="fa-regular fa-clock text-meap-red"></i>
+                        <span>08:00h – 10:00h</span>
+                    </div>
+                </div>
+
+                <!-- Sábado Juventude -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-2xl transition-all relative overflow-hidden group md:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-2 h-full bg-amber-500 absolute left-0 top-0"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 bg-amber-50 text-amber-600 text-xs font-extrabold rounded-full uppercase" data-i18n="services.satAfternoon">Sábado Tarde</span>
+                        <i class="fa-solid fa-users text-2xl text-amber-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-meap-blue mb-2" data-i18n="services.youthTitle">Culto da Juventude (Jovens com Propósito)</h3>
+                    <p class="text-slate-500 text-sm mb-6" data-i18n="services.youthDesc">Dinamismo, louvor jovem, debates bíblicos, orientação de carreira e comunhão vibrante.</p>
+                    <div class="flex items-center gap-3 text-meap-blue font-extrabold text-lg pt-4 border-t border-slate-100">
+                        <i class="fa-regular fa-clock text-meap-red"></i>
+                        <span>16:00h – 18:00h</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOSSA REDE DE PARÓQUIAS -->
+    <section id="paroquias" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-aos="fade-up">
+                <div>
+                    <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="branches.sub">Expansão do Reino</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-meap-blue mt-2">
+                        Nossas Paróquias
+                    </h2>
+                </div>
+                <p class="text-slate-500 text-base max-w-md" data-i18n="branches.desc">
+                    Estamos presentes em diversos bairros estratégicos para levar a palavra e o amor de Cristo perto de você.
+                </p>
+            </div>
+
+            <!-- Branches Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Sapú - Sede -->
+                <div class="rounded-3xl border-2 border-meap-red bg-white p-8 shadow-xl relative flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <span class="absolute -top-3.5 left-6 bg-meap-red text-white text-[10px] font-black uppercase px-3 py-1 rounded-full tracking-widest">
+                        SEDE PRINCIPAL
+                    </span>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-red-50 text-meap-red flex items-center justify-center text-xl font-bold mb-6">
+                            <i class="fa-solid fa-church"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-meap-blue mb-2">Sapú</h3>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-4">Cidade da Restauração</p>
+                        <p class="text-slate-600 text-sm mb-6">
+                            Ref: Escola Josefina Bakhita, Bairro Sapú, Luanda.
+                        </p>
+                    </div>
+                    <a href="#contato" class="inline-flex items-center gap-2 text-meap-red font-bold text-xs uppercase tracking-wider hover:gap-3 transition-all">
+                        <span data-i18n="branches.mapBtn">Ver no Mapa</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Calemba 2 -->
+                <div class="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-md hover:shadow-xl transition-all flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-meap-purple flex items-center justify-center text-xl font-bold mb-6">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-meap-blue mb-2">Calemba 2</h3>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-4">Comunidade Viva</p>
+                        <p class="text-slate-600 text-sm mb-6">
+                            Paróquia dedicada ao acolhimento e evangelismo local.
+                        </p>
+                    </div>
+                    <span class="text-xs font-bold text-slate-400" data-i18n="branches.active">Cultos Regulares</span>
+                </div>
+
+                <!-- Mabor -->
+                <div class="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-md hover:shadow-xl transition-all flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-meap-purple flex items-center justify-center text-xl font-bold mb-6">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-meap-blue mb-2">Mabor</h3>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-4">Cacuaco</p>
+                        <p class="text-slate-600 text-sm mb-6">
+                            Ponto de restauração e oração no município de Cacuaco.
+                        </p>
+                    </div>
+                    <span class="text-xs font-bold text-slate-400" data-i18n="branches.active">Cultos Regulares</span>
+                </div>
+
+                <!-- Hoji Ya Yenda -->
+                <div class="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-md hover:shadow-xl transition-all flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-meap-purple flex items-center justify-center text-xl font-bold mb-6">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-meap-blue mb-2">Hoji Ya Yenda</h3>
+                        <p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-4">Centro Missionário</p>
+                        <p class="text-slate-600 text-sm mb-6">
+                            Comunidade ativa com forte impacto jovem e social.
+                        </p>
+                    </div>
+                    <span class="text-xs font-bold text-slate-400" data-i18n="branches.active">Cultos Regulares</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO VÍDEOS & TRANSMISSÕES (YOUTUBE IFRAME) -->
+    <section id="media" class="py-24 bg-meap-blue text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-aos="fade-up">
+                <div>
+                    <span class="text-xs font-extrabold text-meap-accent uppercase tracking-widest" data-i18n="media.sub">Multimédia MEAP</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-white mt-2">
+                        Pregações & Transmissões
+                    </h2>
+                </div>
+                <a href="https://www.youtube.com" target="_blank" class="inline-flex items-center gap-3 bg-meap-red hover:bg-meap-redHover text-white px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider shadow-lg transition-all shrink-0">
+                    <i class="fa-brands fa-youtube text-lg"></i> <span data-i18n="media.ytBtn">Ver Mais no Canal YouTube</span>
+                </a>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Main Featured Video (Iframe YouTube Embed) -->
+                <div class="lg:col-span-2 rounded-3xl overflow-hidden shadow-2xl bg-slate-900 border border-white/10" data-aos="fade-right">
+                    <div class="relative pt-[56.25%] w-full">
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=meap" 
+                                title="Culto de Domingo MEAP" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-6 bg-slate-900">
+                        <span class="text-xs font-bold text-meap-accent uppercase tracking-wider" data-i18n="media.latest">Último Culto</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Grande Culto de Libertação e Milagres - Cidade da Restauração</h3>
+                    </div>
+                </div>
+
+                <!-- Secondary Video Cards -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 transition-all cursor-pointer flex gap-4 items-center">
+                        <div class="w-28 h-20 rounded-xl bg-slate-800 overflow-hidden shrink-0 relative">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=400&q=80" alt="Video thumb" class="w-full h-full object-cover">
+                            <i class="fa-solid fa-play absolute inset-0 m-auto w-6 h-6 flex items-center justify-center text-white text-xs bg-meap-red rounded-full"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-slate-400">JUVENTUDE</span>
+                            <h4 class="text-sm font-bold text-white line-clamp-2">Mensagem Especial para os Jovens - Evangelista João Panzu</h4>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 transition-all cursor-pointer flex gap-4 items-center">
+                        <div class="w-28 h-20 rounded-xl bg-slate-800 overflow-hidden shrink-0 relative">
+                            <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&w=400&q=80" alt="Video thumb" class="w-full h-full object-cover">
+                            <i class="fa-solid fa-play absolute inset-0 m-auto w-6 h-6 flex items-center justify-center text-white text-xs bg-meap-red rounded-full"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold text-slate-400">LOUVOR</span>
+                            <h4 class="text-sm font-bold text-white line-clamp-2">Momento de Adoração com o Coral da Restauração</h4>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl border border-white/10 bg-meap-purple/40 text-center">
+                        <h4 class="font-bold text-base mb-2" data-i18n="media.subscribeTitle">Inscreva-se no Canal</h4>
+                        <p class="text-xs text-slate-300 mb-4" data-i18n="media.subscribeDesc">Receba notificações das transmissões ao vivo dos nossos cultos.</p>
+                        <a href="https://www.youtube.com" target="_blank" class="w-full block bg-white text-meap-blue py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider hover:bg-slate-100 transition-all">
+                            Subscrever Canal
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERIA DE FOTOS (MASONRY STYLE) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="gallery.sub">Momentos Especiais</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-meap-blue mt-2">
+                    Galeria da Comunidade
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up">
+                <div class="rounded-2xl overflow-hidden h-64 bg-slate-100 group relative">
+                    <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Galeria MEAP">
+                    <div class="absolute inset-0 bg-meap-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden h-64 bg-slate-100 group relative">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Galeria MEAP">
+                    <div class="absolute inset-0 bg-meap-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden h-64 bg-slate-100 group relative">
+                    <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Galeria MEAP">
+                    <div class="absolute inset-0 bg-meap-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden h-64 bg-slate-100 group relative">
+                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Galeria MEAP">
+                    <div class="absolute inset-0 bg-meap-blue/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xl">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOG & NOTÍCIAS DA IGREJA -->
+    <section id="blog" class="py-24 bg-meap-light">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-aos="fade-up">
+                <div>
+                    <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="blog.sub">Atualizações</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-meap-blue mt-2">
+                        Notícias & Artigos
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Blog Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?auto=format&fit=crop&w=800&q=80" alt="Evento Especial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-meap-red text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                            EVENTO
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-slate-400 font-semibold mb-2">24 de Outubro, 2026</div>
+                        <h3 class="text-xl font-bold text-meap-blue mb-3 group-hover:text-meap-red transition-colors" data-i18n="blog.title1">
+                            Conferência de Restauração Familiar
+                        </h3>
+                        <p class="text-slate-500 text-sm mb-4 line-clamp-2" data-i18n="blog.desc1">
+                            Três dias intensos de oração e ensinamentos direcionados ao fortalecimento dos lares na Cidade da Restauração.
+                        </p>
+                        <a href="#" class="text-meap-red font-bold text-xs uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">
+                            <span data-i18n="blog.readMore">Ler Mais</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80" alt="Ação Social" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-meap-purple text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                            ACÇÃO SOCIAL
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-slate-400 font-semibold mb-2">18 de Outubro, 2026</div>
+                        <h3 class="text-xl font-bold text-meap-blue mb-3 group-hover:text-meap-red transition-colors" data-i18n="blog.title2">
+                            Missão Evangélica no Bairro Sapú
+                        </h3>
+                        <p class="text-slate-500 text-sm mb-4 line-clamp-2" data-i18n="blog.desc2">
+                            A equipa evangelística da MEAP realizou uma grande campanha de distribuição de bens e evangelismo de rua.
+                        </p>
+                        <a href="#" class="text-meap-red font-bold text-xs uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">
+                            <span data-i18n="blog.readMore">Ler Mais</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-md hover:shadow-xl transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80" alt="Juventude MEAP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                            JUVENTUDE
+                        </span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-slate-400 font-semibold mb-2">10 de Outubro, 2026</div>
+                        <h3 class="text-xl font-bold text-meap-blue mb-3 group-hover:text-meap-red transition-colors" data-i18n="blog.title3">
+                            Encontro Geral de Jovens no Sábado
+                        </h3>
+                        <p class="text-slate-500 text-sm mb-4 line-clamp-2" data-i18n="blog.desc3">
+                            Juventude reunida para debate sobre fé, carreira e vida espiritual no mundo contemporâneo.
+                        </p>
+                        <a href="#" class="text-meap-red font-bold text-xs uppercase tracking-wider inline-flex items-center gap-1 hover:gap-2 transition-all">
+                            <span data-i18n="blog.readMore">Ler Mais</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO, MAPA INTEGRADO & CONTATO -->
+    <section id="contato" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Information -->
+                <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
+                    <div>
+                        <span class="text-xs font-extrabold text-meap-red uppercase tracking-widest" data-i18n="contact.sub">Venha nos Visitar</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold font-serif text-meap-blue mt-2">
+                            Sede Mundial Sapú
+                        </h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-red-50 text-meap-red flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-meap-blue" data-i18n="contact.addressTitle">Endereço Principal</h4>
+                                <p class="text-slate-600 text-sm">Bairro Sapú, Referência Escola Josefina Bakhita, Luanda, Angola.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-meap-purple flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-meap-blue" data-i18n="contact.phoneTitle">Telefone / WhatsApp</h4>
+                                <p class="text-slate-600 text-sm">+244 9XX XXX XXX / +244 9XX XXX XXX</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-meap-purple flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-meap-blue">Email Institucional</h4>
+                                <p class="text-slate-600 text-sm">contacto@igrejameap.org</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map note -->
+                    <div class="p-4 bg-amber-50 border border-amber-200/60 rounded-xl text-xs text-amber-900 flex items-center gap-3">
+                        <i class="fa-solid fa-circle-info text-amber-600 text-lg shrink-0"></i>
+                        <span><strong>Nota de Acesso:</strong> Ao chegar ao bairro Sapú, tome como ponto de referência principal a Escola Josefina Bakhita.</span>
+                    </div>
+
+                </div>
+
+                <!-- Embedded Google Map -->
+                <div class="lg:col-span-7 h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.2709123883!2d13.2700!3d-8.9100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNTQnMzYuMCJTIDEzwrAxNicxMi4wIkU!5e0!3m2!1spt-PT!2sao!4v1600000000000!5m2!1spt-PT!2sao" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEWSLETTER FORM -->
+    <section class="py-16 bg-meap-blue text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-6" data-aos="fade-up">
+            <h3 class="text-2xl sm:text-3xl font-serif font-bold" data-i18n="news.title">Receba Inspiração & Avisos no seu Email</h3>
+            <p class="text-slate-300 text-sm max-w-xl mx-auto" data-i18n="news.desc">Subscreva a nossa newsletter para receber os horários de cultos especiais, devocionais e transmissões ao vivo.</p>
+            <form onsubmit="event.preventDefault(); alert('Obrigado por se subscrever!');" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <input type="email" placeholder="Seu endereço de email" required class="px-5 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-meap-red flex-grow text-sm">
+                <button type="submit" class="bg-meap-red hover:bg-meap-redHover text-white px-8 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shrink-0">
+                    <span data-i18n="news.btn">Subscrever</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-white font-extrabold text-xl">
+                        <div class="w-8 h-8 rounded-lg bg-meap-red flex items-center justify-center text-white font-black text-sm">M</div>
+                        MEAP
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Igreja Missão Evangélica Almas Perdidas (Cidade da Restauração). Fundada em 2013 pelo Evangelista João Panzu.
+                    </p>
+                    <p class="text-xs font-bold text-meap-red">JESUS LIBERTA</p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="#cultos" class="hover:text-white transition-colors">Programa de Cultos</a></li>
+                        <li><a href="#paroquias" class="hover:text-white transition-colors">Paróquias</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Media & Social -->
+                <div>
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Redes Sociais</h4>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-meap-red hover:text-white transition-all text-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-meap-red hover:text-white transition-all text-sm"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-meap-red hover:text-white transition-all text-sm"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-meap-red hover:text-white transition-all text-sm"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 4: Dev & Tech Note -->
+                <div>
+                    <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-4">Plataforma Digital</h4>
+                    <p class="text-[11px] text-slate-500 mb-3">
+                        Desenvolvido com padrão corporativo para posterior integração ao Painel Administrativo (React / Next.js / Laravel).
+                    </p>
+                    <span class="inline-block px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-[10px] font-mono text-slate-400">
+                        v2.4 - Ready for API Integration
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>© 2026 Igreja MEAP - Cidade da Restauração. Todos os direitos reservados.</p>
+                <p>Sapú, Luanda - Angola</p>
+            </div>
         </div>
     </footer>
+
+    <!-- SCRIPTS DE INTERATIVIDADE, ANIMAÇÕES E TRADUÇÃO MULTI-IDIOMA -->
+    <script defer src="https://cdn.jsdelivr.com/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 1. Dicionário de Idiomas (PT, EN, FR)
+        const translations = {
+            pt: {
+                "header.subtitle": "Cidade da Restauração",
+                "nav.home": "Início",
+                "nav.about": "Sobre Nós",
+                "nav.services": "Cultos",
+                "nav.branches": "Paróquias",
+                "nav.media": "Vídeos",
+                "nav.blog": "Notícias",
+                "nav.contact": "Contacto",
+                "header.live": "Ao Vivo",
+                "hero.tag": "Missão Evangélica Almas Perdidas",
+                "hero.desc1": "Resgatando vidas, restaurando famílias e transformando destinos desde 2013 em Luanda e no mundo.",
+                "hero.btn1": "Nossos Cultos",
+                "hero.btn2": "Ver Paróquias",
+                "hero.desc2": "Um lugar sagrado de comunhão, oração e ensino vivo da Palavra de Deus.",
+                "hero.btn3": "Visite a Sede no Sapú",
+                "verse.tag": "Palavra Rhema",
+                "verse.btn": "Nossa História",
+                "about.sub": "Sobre a Nossa Igreja",
+                "about.p1": "A MEAP (Missão Evangélica Almas Perdidas) nasceu sob a revelação divina concedida ao Evangelista João Panzu. Com sede no Bairro Sapú, a igreja tem sido uma ferramenta viva de milagres e restauração.",
+                "acronym.m": "Missão",
+                "acronym.e": "Evangélica",
+                "acronym.a": "Almas",
+                "acronym.p": "Perdidas",
+                "about.founder": "Fundador e Líder Geral da MEAP",
+                "about.years": "Anos de Existência & Impacto Espiritual",
+                "services.sub": "Agenda da Semana",
+                "services.desc": "Venha celebrar, orar e aprender com a nossa comunidade.",
+                "services.sun": "Domingo",
+                "services.sunTitle": "Culto Dominical da Família",
+                "services.sunDesc": "Louvor vibrante, adoração, ministração da Palavra e benção para a família.",
+                "services.tue": "Terça-Feira",
+                "services.tueTitle": "Culto de Ensino e Doutrina",
+                "services.tueDesc": "Crescimento espiritual profundo e estudo sistemático das Escrituras.",
+                "services.thu": "Quinta-Feira",
+                "services.thuTitle": "Culto de Libertação e Milagres",
+                "services.thuDesc": "Oração forte, quebra de correntes e manifestação do poder de Deus.",
+                "services.satMorning": "Sábado Manhã",
+                "services.kidsTitle": "Culto das Crianças",
+                "services.kidsDesc": "Educação cristã, louvor infantil e evangelismo adaptado aos pequeninos.",
+                "services.satAfternoon": "Sábado Tarde",
+                "services.youthTitle": "Culto da Juventude (Jovens com Propósito)",
+                "services.youthDesc": "Dinamismo, louvor jovem, debates bíblicos e comunhão vibrante.",
+                "branches.sub": "Expansão do Reino",
+                "branches.desc": "Estamos presentes em diversos bairros estratégicos para levar a palavra perto de você.",
+                "branches.mapBtn": "Ver no Mapa",
+                "branches.active": "Cultos Regulares",
+                "media.sub": "Multimédia MEAP",
+                "media.ytBtn": "Ver Mais no Canal YouTube",
+                "media.latest": "Último Culto",
+                "media.subscribeTitle": "Inscreva-se no Canal",
+                "media.subscribeDesc": "Receba notificações das transmissões ao vivo dos nossos cultos.",
+                "gallery.sub": "Momentos Especiais",
+                "blog.sub": "Atualizações",
+                "blog.title1": "Conferência de Restauração Familiar",
+                "blog.desc1": "Três dias intensos de oração e ensinamentos na Cidade da Restauração.",
+                "blog.title2": "Missão Evangélica no Bairro Sapú",
+                "blog.desc2": "Evangelismo de rua e distribuição de ajuda comunitária.",
+                "blog.title3": "Encontro Geral de Jovens no Sábado",
+                "blog.desc3": "Debate sobre fé, carreira e princípios cristãos.",
+                "blog.readMore": "Ler Mais",
+                "contact.sub": "Venha nos Visitar",
+                "contact.addressTitle": "Endereço Principal",
+                "contact.phoneTitle": "Telefone / WhatsApp",
+                "news.title": "Receba Inspiração & Avisos no seu Email",
+                "news.desc": "Subscreva a nossa newsletter para receber notícias e horários dos cultos.",
+                "news.btn": "Subscrever"
+            },
+            en: {
+                "header.subtitle": "City of Restoration",
+                "nav.home": "Home",
+                "nav.about": "About Us",
+                "nav.services": "Services",
+                "nav.branches": "Parishes",
+                "nav.media": "Videos",
+                "nav.blog": "News",
+                "nav.contact": "Contact",
+                "header.live": "Watch Live",
+                "hero.tag": "Evangelical Mission Lost Souls",
+                "hero.desc1": "Rescuing lives, restoring families, and transforming destinies since 2013 in Luanda and worldwide.",
+                "hero.btn1": "Our Services",
+                "hero.btn2": "View Parishes",
+                "hero.desc2": "A sacred place of fellowship, prayer, and living gospel teachings.",
+                "hero.btn3": "Visit HQ in Sapú",
+                "verse.tag": "Rhema Word",
+                "verse.btn": "Our History",
+                "about.sub": "About Our Church",
+                "about.p1": "MEAP was born under divine revelation given to Evangelist João Panzu. Headquartered in Sapú, the church has been a living instrument of restoration and miracles.",
+                "acronym.m": "Mission",
+                "acronym.e": "Evangelical",
+                "acronym.a": "Almas (Souls)",
+                "acronym.p": "Perdidas (Lost)",
+                "about.founder": "Founder and General Leader of MEAP",
+                "about.years": "Years of Spiritual Impact",
+                "services.sub": "Weekly Schedule",
+                "services.desc": "Come celebrate, pray, and grow with our community.",
+                "services.sun": "Sunday",
+                "services.sunTitle": "Family Worship Service",
+                "services.sunDesc": "Vibrant praise, worship, biblical sermon, and family blessing.",
+                "services.tue": "Tuesday",
+                "services.tueTitle": "Bible Study & Doctrine Service",
+                "services.tueDesc": "Deep spiritual growth and systematic Bible teachings.",
+                "services.thu": "Thursday",
+                "services.thuTitle": "Deliverance & Miracles Service",
+                "services.thuDesc": "Strong prayer, breaking bondage, and manifestation of God's power.",
+                "services.satMorning": "Saturday Morning",
+                "services.kidsTitle": "Children's Ministry Service",
+                "services.kidsDesc": "Christian education and worship tailored for kids.",
+                "services.satAfternoon": "Saturday Afternoon",
+                "services.youthTitle": "Youth Service (Purpose Driven Youth)",
+                "services.youthDesc": "Vibrant fellowship, youth worship, and relevant discussions.",
+                "branches.sub": "Kingdom Expansion",
+                "branches.desc": "We are located across key neighborhoods to bring God's word close to you.",
+                "branches.mapBtn": "View on Map",
+                "branches.active": "Regular Services",
+                "media.sub": "MEAP Media",
+                "media.ytBtn": "Watch More on YouTube",
+                "media.latest": "Latest Service",
+                "media.subscribeTitle": "Subscribe Channel",
+                "media.subscribeDesc": "Get notified when we broadcast live services.",
+                "gallery.sub": "Special Moments",
+                "blog.sub": "Updates",
+                "blog.title1": "Family Restoration Conference",
+                "blog.desc1": "Three intense days of prayer and teachings at City of Restoration.",
+                "blog.title2": "Evangelistic Outreach in Sapú",
+                "blog.desc2": "Community aid distribution and street preaching.",
+                "blog.title3": "General Youth Gathering on Saturday",
+                "blog.desc3": "Debate on faith, career, and Christian principles.",
+                "blog.readMore": "Read More",
+                "contact.sub": "Come Visit Us",
+                "contact.addressTitle": "Main Address",
+                "contact.phoneTitle": "Phone / WhatsApp",
+                "news.title": "Receive Inspiration & Updates in Your Inbox",
+                "news.desc": "Subscribe to our newsletter for service schedules and announcements.",
+                "news.btn": "Subscribe"
+            },
+            fr: {
+                "header.subtitle": "Cité de la Restauration",
+                "nav.home": "Accueil",
+                "nav.about": "À Propos",
+                "nav.services": "Cultes",
+                "nav.branches": "Paroisses",
+                "nav.media": "Vidéos",
+                "nav.blog": "Actualités",
+                "nav.contact": "Contact",
+                "header.live": "En Direct",
+                "hero.tag": "Mission Évangélique Âmes Perdues",
+                "hero.desc1": "Sauver des vidas, restaurer des familles et transformer des destinées depuis 2013.",
+                "hero.btn1": "Nos Cultes",
+                "hero.btn2": "Nos Paroisses",
+                "hero.desc2": "Un lieu sacré de communion, de prière et d'enseignement de la Parole.",
+                "hero.btn3": "Visitez le Siège à Sapú",
+                "verse.tag": "Parole Rhema",
+                "verse.btn": "Notre Histoire",
+                "about.sub": "À Propos de Notre Église",
+                "about.p1": "La MEAP est née sous la révélation divine accordée à l'Évangéliste João Panzu. Basée à Sapú, elle est un instrument vivant de miracles et de restauration.",
+                "acronym.m": "Mission",
+                "acronym.e": "Évangélique",
+                "acronym.a": "Âmes",
+                "acronym.p": "Perdues",
+                "about.founder": "Fondateur et Dirigeant Général",
+                "about.years": "Années d'Impact Spirituel",
+                "services.sub": "Programme de la Semaine",
+                "services.desc": "Venez célébrer, prier et grandir avec notre communauté.",
+                "services.sun": "Dimanche",
+                "services.sunTitle": "Culte Dominical de la Famille",
+                "services.sunDesc": "Louange vibrante, adoration et bénédiction familiale.",
+                "services.tue": "Mardi",
+                "services.tueTitle": "Culte d'Enseignement et Doctrine",
+                "services.tueDesc": "Croissance spirituelle profonde et étude de la Bible.",
+                "services.thu": "Jeudi",
+                "services.thuTitle": "Culte de Délivrance et Miracles",
+                "services.thuDesc": "Prière puissante, libération e puissance de Dieu.",
+                "services.satMorning": "Samedi Matin",
+                "services.kidsTitle": "Culte des Enfants",
+                "services.kidsDesc": "Éducation chrétienne et louange pour les petits.",
+                "services.satAfternoon": "Samedi Après-midi",
+                "services.youthTitle": "Culte de la Jeunesse",
+                "services.youthDesc": "Rencontre dynamique et débats pour les jeunes.",
+                "branches.sub": "Expansion du Royaume",
+                "branches.desc": "Nous sommes présents dans plusieurs quartiers pour vous apporter la Parole.",
+                "branches.mapBtn": "Voir sur la Carte",
+                "branches.active": "Cultes Réguliers",
+                "media.sub": "Média MEAP",
+                "media.ytBtn": "Voir Plus sur YouTube",
+                "media.latest": "Dernier Culte",
+                "media.subscribeTitle": "S'abonner à la Chaîne",
+                "media.subscribeDesc": "Recevez des notifications pour nos cultes en direct.",
+                "gallery.sub": "Moments Spéciaux",
+                "blog.sub": "Mises à Jour",
+                "blog.title1": "Conférence de Restauration Familiale",
+                "blog.desc1": "Trois jours intenses de prière et d'enseignements.",
+                "blog.title2": "Action Évangélique à Sapú",
+                "blog.desc2": "Distribution d'aide communautaire et prédication.",
+                "blog.title3": "Rassemblement des Jeunes le Samedi",
+                "blog.desc3": "Débat sur la foi, la carrière et les principes chrétiens.",
+                "blog.readMore": "En Savoir Plus",
+                "contact.sub": "Venez Nous Visiter",
+                "contact.addressTitle": "Adresse Principale",
+                "contact.phoneTitle": "Téléphone / WhatsApp",
+                "news.title": "Inspiration et Mises à Jour par Email",
+                "news.desc": "Abonnez-vous à notre newsletter pour recevoir les informations.",
+                "news.btn": "S'abonner"
+            }
+        };
+
+        // Função de Troca de Idioma
+        function changeLanguage(lang) {
+            document.getElementById('currentLang').innerText = lang.toUpperCase();
+            document.getElementById('mobileCurrentLang').innerText = lang.toUpperCase();
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerText = translations[lang][key];
+                }
+            });
+        }
+
+        // 2. Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        }
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', toggleMobileMenu);
+        }
+
+        // 3. Inicialização Segura com Verificação de Bibliotecas
+        function initLibraries() {
+            // Inicialização do Swiper
+            if (typeof Swiper !== 'undefined') {
+                try {
+                    new Swiper('.heroSwiper', {
+                        loop: true,
+                        autoplay: {
+                            delay: 6000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        effect: 'fade',
+                        fadeEffect: {
+                            crossFade: true
+                        }
+                    });
+                } catch (e) {
+                    console.warn('Erro ao inicializar Swiper:', e);
+                }
+            }
+
+            // Inicialização do AOS (Animations)
+            if (typeof AOS !== 'undefined') {
+                try {
+                    AOS.init({
+                        duration: 800,
+                        once: true,
+                        offset: 100
+                    });
+                } catch (e) {
+                    console.warn('Erro ao inicializar AOS:', e);
+                }
+            }
+        }
+
+        // Executa com janela carregada para garantir que scripts diferidos (defer) estejam prontos
+        if (document.readyState === 'complete') {
+            initLibraries();
+        } else {
+            window.addEventListener('load', initLibraries);
+        }
+    </script>
 
 </body>
 </html>
